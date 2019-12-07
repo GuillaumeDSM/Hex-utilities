@@ -1,6 +1,7 @@
 # Hex-utilities
 
 Hex utilities is an automated tool to interract with the Hex smart contract on the Ethereum blockchain.
+It sends periodic telegram notifications with information from the smart contract.
 
 # Using Hex-utilities
 
