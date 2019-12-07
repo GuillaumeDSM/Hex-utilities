@@ -1,16 +1,16 @@
 # Hex-utilities
 
-Hex utilities is an automated tool to interract with Hex smart contract on the Ethereum blockchain.
+Hex utilities is an automated tool to interract with the Hex smart contract on the Ethereum blockchain.
 
 # Using Hex-utilities
 
-- Install python3.7 (https://www.python.org/downloads/) and the requirements
+- Install python3.7 (https://www.python.org/downloads/) and the requirements.
 ```
-git clone git@github.com:GuillaumeDSM/Hex-utilities.git && cd Hex-utilities
+git clone https://github.com/GuillaumeDSM/Hex-utilities.git && cd Hex-utilities
 python3.7 -m pip install -r requirements.txt
 ```
 
-- Edit hex_checker_telegram_bot.py to enter the settings that suit you if config section
+- Edit hex_checker_telegram_bot.py to enter the settings that suit you in config section
 - Start the program
 ```
 python3.7 hex_checker_telegram_bot.py

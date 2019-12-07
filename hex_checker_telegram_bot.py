@@ -84,8 +84,8 @@ class Bot:
 	@staticmethod
 	def _command_start(_, update):
 		if Bot._is_valid_request(update):
-			update.message.reply_markdown("Hello, I'm the Hex info Bot. I will update you before the end of each " 
-			"adoption amplifier lobby.\nType /info to get the current lobby info.\nType "
+			update.message.reply_markdown("Hello, I'm the Hex info Bot. I will update you before the "
+			"end of each adoption amplifier lobby.\nType /info to get the current lobby info.\nType "
 			"/help to get help about my skills.")
 		else:
 			update.message.reply_markdown(update, "Nope")
@@ -98,7 +98,8 @@ class Bot:
 	@staticmethod
 	def _command_ping(_, update):
 		if Bot._is_valid_request(update):
-			update.message.reply_markdown(f"I'm alive since {datetime.fromtimestamp(Bot.START_TIME).strftime('%Y-%m-%d %H:%M:%S')}.")
+			update.message.reply_markdown(
+				f"I'm alive since {datetime.fromtimestamp(Bot.START_TIME).strftime('%Y-%m-%d %H:%M:%S')}.")
 	
 	@staticmethod
 	def _command_help(_, update):
