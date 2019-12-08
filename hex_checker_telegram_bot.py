@@ -78,7 +78,7 @@ class Bot:
 			CommandHandler("ping", self._command_ping),
 			CommandHandler("info", self._command_info),
 			CommandHandler("help", self._command_help),
-            MessageHandler(Filters.command, self._command_unknown)
+			MessageHandler(Filters.command, self._command_unknown)
 		]
 	
 	@staticmethod
@@ -111,13 +111,13 @@ class Bot:
 			message += "/info: `Shows Hex useful info.`\n"
 			message += "/help: `Shows this help.`"
 			update.message.reply_markdown(message)
-	
+
 
 	@staticmethod
 	def _command_unknown(_, update):
 		if Bot._is_valid_request(update):
 			update.message.reply_text(f"Unfortunately, I don't know the command: {update.effective_message.text}.")
-    
+
 	@staticmethod
 	def _echo(_, update):
 		if Bot._is_valid_request(update):
