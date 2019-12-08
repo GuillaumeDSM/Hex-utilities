@@ -93,7 +93,7 @@ class Bot:
 	@staticmethod
 	def _command_info(_, update):
 		if Bot._is_valid_request(update):
-			Bot.HEX_INFO.hex.refresh_data()
+			Bot.HEX_INFO.refresh_data()
 			update.message.reply_markdown(Bot._get_info_message())
 	
 	@staticmethod
